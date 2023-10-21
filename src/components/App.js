@@ -27,23 +27,23 @@ function App() {
 
       <div classname="pane top-pane">
 
-        <Editor 
-        language="xml" 
-        displayName="HTML"
-        value={html}
-        onChange={setHtml} />
+        <Editor
+          language="xml"
+          displayName="HTML"
+          value={html}
+          onChange={setHtml} />
 
-         <Editor 
-        language="css" 
-        displayName="CSS"
-        value={css}
-        onChange={setCss} />
+        <Editor
+          language="css"
+          displayName="CSS"
+          value={css}
+          onChange={setCss} />
 
-         <Editor 
-        language="js" 
-        displayName="JAVASCRIPT"
-        value={js}
-        onChange={setJs} />
+        <Editor
+          language="js"
+          displayName="JAVASCRIPT"
+          value={js}
+          onChange={setJs} />
 
       </div>
 
