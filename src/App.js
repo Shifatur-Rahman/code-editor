@@ -8,10 +8,10 @@ function App() {
   return (
     <>
 
-      <div classname="top-pane">
+      <div classname="pane top-pane">
 
         <Editor 
-        language="Xml" 
+        language="xml" 
         displayName="HTML"
         value={html}
         onChange={setHtml} />
@@ -34,7 +34,7 @@ function App() {
         <iframe
           title="output"
           sandbox="allow-scripts"
-          frameBorder="0"
+          frameBorder='0'
           width="100%"
           height="100%"
 

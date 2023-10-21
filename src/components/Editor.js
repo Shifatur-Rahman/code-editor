@@ -27,11 +27,11 @@ const Editor = (props) => {
               value={value}
               className="code-mirror-wrapper"
               options={{
-                lineWrapping:true,
-                lint:true,
-                mode:language,
-                lineNumbers:true,
-                theme: "material"
+                lineWrapping: true,
+                lint: true,
+                mode: language,
+                lineNumbers: true,
+                theme: 'material'
               }}
               />
           </div>
