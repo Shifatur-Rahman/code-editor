@@ -8,7 +8,7 @@ import "codemirror/mode/css/css";
 
 const Editor = (props) => {
 
-    const {language,displayName,value,onChange} = props
+    const {language,displayName,value,onChange} = props;
 
     let handleChange=(editor, data, value)=>{
        onChange(value);
