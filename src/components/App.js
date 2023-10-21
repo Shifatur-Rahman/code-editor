@@ -10,13 +10,13 @@ function App() {
   useEffect(() => {
     const timeOut = setTimeout(() => {
       setSrcDoc(`
-    
+      
         <html>
         <body> ${html} </body>
         <style> ${css} </style>
         <script> ${js} </script>
         </html>
-        
+       
         `)
     }, 250)
     return () => clearTimeout(timeOut)

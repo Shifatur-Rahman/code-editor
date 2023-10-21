@@ -19,20 +19,20 @@ const Editor = (props) => {
 
           <div className='editor-container'>
               <div className='editor-title'>
-                 {displayName}
-                 <button>O/C</button>
+                  {displayName}
+                  <button>O/C</button>
               </div>
               <ControlledEditor
-              onBeforeChange={handleChange}
-              value={value}
-              className="code-mirror-wrapper"
-              options={{
-                lineWrapping: true,
-                lint: true,
-                mode: language,
-                lineNumbers: true,
-                theme: 'material'
-              }}
+                  onBeforeChange={handleChange}
+                  value={value}
+                  className="code-mirror-wrapper"
+                  options={{
+                      lineWrapping: true,
+                      lint: true,
+                      mode: language,
+                      lineNumbers: true,
+                      theme: 'material'
+                  }}
               />
           </div>
 
