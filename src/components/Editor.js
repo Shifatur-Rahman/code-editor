@@ -1,4 +1,3 @@
-import React from 'react'
 import { Controlled as ControlledEditor } from "react-codemirror2";
 import "codemirror/lib/codemirror.css";
 import "codemirror/theme/material.css";
@@ -10,15 +9,15 @@ const Editor = (props) => {
 
     const {language,displayName,value,onChange} = props;
 
-    let handleChange=(editor, data, value)=>{
+    function handleChange(editor, data, value){
        onChange(value);
     }
 
   return (
     <>
 
-          <div className='editor-container'>
-              <div className='editor-title'>
+          <div className="editor-container">
+              <div className="editor-title">
                   {displayName}
                   <button>O/C</button>
               </div>
@@ -30,8 +29,8 @@ const Editor = (props) => {
                       lineWrapping: true,
                       lint: true,
                       mode: language,
+                      theme: 'material',
                       lineNumbers: true,
-                      theme: 'material'
                   }}
               />
           </div>
