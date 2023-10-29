@@ -9,7 +9,6 @@ import "./Style.css"
 const Editor = (props) => {
 
     const {language,displayName,value,onChange} = props;
-
     function handleChange(editor, data, value){
        onChange(value);
     }
