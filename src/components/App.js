@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Editor from './Editor';
+import "./Style.css"
 
 function App() {
   const [html, setHtml] = useState('');
@@ -25,7 +26,7 @@ function App() {
   return (
     <>
 
-      <div classname="pane top-pane">
+      <div style={{display:"flex", height:"50vh"}} classname="pane top-pane">
 
         <Editor
           language="xml"
@@ -40,14 +41,14 @@ function App() {
           onChange={setCss} />
 
         <Editor
-          language="js"
+          language="JAVASCRIPT"
           displayName="JAVASCRIPT"
           value={js}
           onChange={setJs} />
 
       </div>
 
-      <div classname="pane">
+      <div style={{height:"50vh"}} classname="pane">
         <iframe
           srcDoc={srcDoc}
           title="output"

@@ -4,6 +4,7 @@ import "codemirror/theme/material.css";
 import "codemirror/mode/javascript/javascript";
 import "codemirror/mode/xml/xml";
 import "codemirror/mode/css/css";
+import "./Style.css"
 
 const Editor = (props) => {
 
