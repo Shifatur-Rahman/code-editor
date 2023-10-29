@@ -6,7 +6,7 @@ import "codemirror/mode/xml/xml";
 import "codemirror/mode/css/css";
 import "./Style.css"
 // import {UnControlled as CodeMirror} from 'react-codemirror2'
-import {Controlled as CodeMirror} from 'react-codemirror2'
+// import {Controlled as CodeMirror} from 'react-codemirror2'
 
 const Editor = (props) => {
     const {language,displayName,value,onChange} = props;
@@ -32,8 +32,8 @@ const Editor = (props) => {
               <ControlledEditor
                   onBeforeChange={handleChange}
                   value={value}
-                  // className="code-mirror-wrapper"
-                  className="CodeMirror"
+                   className="code-mirror-wrapper"
+                 // className="CodeMirror"
                   options={{
                       lineWrapping: true,
                       lint: true,
