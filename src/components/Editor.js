@@ -5,6 +5,7 @@ import "codemirror/mode/javascript/javascript";
 import "codemirror/mode/xml/xml";
 import "codemirror/mode/css/css";
 import "./Style.css"
+// import {UnControlled as CodeMirror} from 'react-codemirror2'
 
 const Editor = (props) => {
 
@@ -34,7 +35,6 @@ const Editor = (props) => {
                   }}
               />
           </div>
-
     </>
   )
 }

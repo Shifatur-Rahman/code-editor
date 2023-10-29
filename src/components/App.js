@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       
-      <div style={{ display: "flex" }} classname="pane top-pane">
+      <div style={{ display: "flex", height:"50vh" }} classname="pane top-pane">
         <Editor
           language="xml"
           displayName="HTML"
